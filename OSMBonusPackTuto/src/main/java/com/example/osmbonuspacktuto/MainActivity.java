@@ -403,4 +403,8 @@ public class MainActivity extends Activity implements MapEventsReceiver {
 		return true;
 	}
 
+	public void deleteMarkers(View view){
+		map.getOverlays().clear();
+		map.invalidate();
+	}
 }
